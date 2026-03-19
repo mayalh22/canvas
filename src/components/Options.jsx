@@ -1,28 +1,46 @@
-// src/components/Options.jsx
-import React, { useState } from "react";
-import PrizeGrid from "./PrizeGrid";
-import { ChallengeGrid } from "./ChallengeGrid";
-import ExampleArtGrid from "./ExampleArtGrid";
-import Gallery from "./Gallery";
+import { useState } from "react"
+import Button from "./Helpful/Button"
+import Grid from "./Helpful/Grid"
+import PrizeGrid from "./PrizeGrid"
+import ChallengeGrid from "./ChallengeGrid"
+import ExampleArtGrid from "./ExampleArtGrid"
+import Gallery from "./Gallery"
+
+const TABS = [
+  { id: "prizes",     label: "Prizes"       },
+  { id: "challenges", label: "Challenges"   },
+  { id: "examples",   label: "Art Examples" },
+  { id: "gallery",    label: "Gallery"      },
+]
 
 export default function Options() {
-  const [selected, setSelected] = useState(null);
+  const [active, setActive] = useState(null)
 
   return (
-    <section id="options">
-      <h2>Explore</h2>
-      <div className="buttons">
-        <button onClick={() => setSelected("prizes")}>Prizes</button>
-        <button onClick={() => setSelected("challenges")}>Challenges</button>
-        <button onClick={() => setSelected("examples")}>Example Art</button>
-        <button onClick={() => setSelected("gallery")}>Gallery</button>
+    <section id="options" className="section">
+      <p className="section-label">explore</p>
+      <h2 className="subtitle">What's inside</h2>
+
+      <div className="tab-row">
+        {TABS.map((tab) => (
+          <Button
+            key={tab.id}
+            label={tab.label}
+            variant={active === tab.id ? "primary" : "secondary"}
+            onClick={() => setActive(active === tab.id ? null : tab.id)}
+          />
+        ))}
       </div>
-      <div className="grid-display">
-        {selected === "prizes" && <PrizeGrid />}
-        {selected === "challenges" && <ChallengeGrid />}
-        {selected === "examples" && <ExampleArtGrid />}
-        {selected === "gallery" && <Gallery />}
+
+      <div className="tab-panel">
+        {active === "prizes"     && <PrizeGrid />}
+        {active === "challenges" && <ChallengeGrid />}
+        {active === "examples"   && <ExampleArtGrid />}
+        {active === "gallery"    && <Gallery />}
+        {active === null && (
+          <p className="tab-empty">Select a category above to explore.</p>
+        )}
       </div>
     </section>
-  );
+  )
 }

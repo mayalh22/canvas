@@ -1,25 +1,34 @@
-import { useState } from 'react';
-import Submit from './Form/Submit';
-import Prize from './Form/Prize';
+import { useState } from "react"
+import Button from "./Helpful/Button"
+import Submit from "./Form/Submit"
+import Prize from "./Form/Prize"
 
 export default function FormsChoose() {
-  const [selectedForm, setSelectedForm] = useState(null);
-
-  if (selectedForm === 'submit') return <Submit />;
-  if (selectedForm === 'prize') return <Prize />;
+  const [active, setActive] = useState(null)
 
   return (
-    <div className="forms-choose">
-      <h2>Choose a Form</h2>
-      <p>Select the form you want to fill out:</p>
-      <div className="form-buttons">
-        <button onClick={() => setSelectedForm('submit')}>
-          Submit a Project
-        </button>
-        <button onClick={() => setSelectedForm('prize')}>
-          Claim a Prize
-        </button>
+    <section id="forms" className="section">
+      <p className="section-label">ready?</p>
+      <h2 className="subtitle">Let's go</h2>
+      <p>Pick what you're here to do.</p>
+
+      <div className="forms-choice-row">
+        <Button
+          label="Submit a project"
+          variant={active === "submit" ? "primary" : "secondary"}
+          onClick={() => setActive(active === "submit" ? null : "submit")}
+        />
+        <Button
+          label="Redeem pixels"
+          variant={active === "prize" ? "primary" : "secondary"}
+          onClick={() => setActive(active === "prize" ? null : "prize")}
+        />
       </div>
-    </div>
-  );
+
+      <div className="form-panel">
+        {active === "submit" && <Submit />}
+        {active === "prize"  && <Prize />}
+      </div>
+    </section>
+  )
 }

@@ -1,14 +1,15 @@
-import React from "react";
-import Header from "./components/Header";
-import About from "./components/About";
-import Options from "./components/Options";
-import FAQ from "./components/FAQ";
-import FormsChoose from "./components/FormsChoose";
-import Footer from "./components/Footer";
+import Header from "./components/Header"
+import About from "./components/About"
+import Options from "./components/Options"
+import FAQ from "./components/FAQ"
+import FormsChoose from "./components/FormsChoose"
+import Footer from "./components/Footer"
+import Stars from "./components/Stars"
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Stars />
       <Header />
       <main>
         <About />
@@ -18,7 +19,5 @@ function App() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
-
-export default App;
