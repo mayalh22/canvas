@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 /* Color variables */
 :root {
   --bg: #1f1c1f;
@@ -14,8 +14,7 @@
 
 /* Global font */
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: var(--lime);
+
   background-color: var(--bg);
 }
 
@@ -30,7 +29,8 @@ body {
 
 .subtitle {
     text-align: center;
-    font-size: 1rem;     /* larger than normal */
-    font-weight: 300;      /* light */
+    font-size: 1rem;
+    font-weight: 300;
     color: var(--lime);
+    font-family: 'Roboto Mono', monospace;
 }
