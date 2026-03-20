@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-inner">
-<img src={wordmark} alt="Canvas" className="wordmark-img" />
+<Link to="/"><img src={wordmark} alt="Canvas" className="wordmark-img" /></Link>
 
         <nav className="nav">
           {ANCHOR_LINKS.map((l) => (
