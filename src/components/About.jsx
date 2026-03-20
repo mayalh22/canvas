@@ -1,12 +1,14 @@
 import Grid from "./Helpful/Grid"
+import Button from "./Helpful/Button"
 
 export default function About() {
   return (
     <section id="about" className="section">
-      <p className="section-label">what is this</p>
+
       <Grid cols={2}>
         <div className="about-main">
-          <h1 className="title">Code something worth looking at.</h1>
+          <h1 className="title">CANVAS</h1>
+          <h1 className="subtitle">Code something worth looking at.</h1>
           <p>
 You know how to write code. You’ve worked with functions, loops, API’s, anything useful. Code is inherently useful! But it can also look nice.
 Canvas is a YSWS for Hack Clubbers who want to see their program hung on their wall.
@@ -31,15 +33,16 @@ Canvas is a YSWS for Hack Clubbers who want to see their program hung on their w
           </div>
         </div>
 
-        <div className="journal-card">
-          <p className="section-label">from maya's journal</p>
-          <p>
-            I kept making generative art and data viz side projects and wondering
-            why isn't there a YSWS for this... So here it is. Ship something pretty,
-            get paintbrushes. Ship something really pretty, get an iPad!
-          </p>
-          <p className="journal-date">March 2026</p>
-        </div>
+<div className="journal-card">
+  <p className="section-label">My notes!</p>
+  <p>
+    I kept making generative art and data viz side projects and wondering
+    why isn't there a YSWS for this... So here it is. Ship something pretty,
+    get paintbrushes. Ship something really pretty, get an iPad!
+  </p>
+  <p className="journal-date">March 2026</p>
+  <Button label="RSVP" onClick={() => window.open('https://forms.fillout.com/t/rYV9dBqDLqus', '_blank')} />
+</div>
       </Grid>
     </section>
   )

@@ -1,34 +1,33 @@
 import { useState } from "react"
 import Button from "./Helpful/Button"
-import Submit from "./Form/Submit"
-import Prize from "./Form/Prize"
 
 export default function FormsChoose() {
   const [active, setActive] = useState(null)
 
+  const handleClick = (type, url) => {
+    setActive(type)
+    window.open(url, "_blank")
+  }
+
   return (
     <section id="forms" className="section">
       <p className="section-label">ready?</p>
-      <h2 className="subtitle">Let's go</h2>
-      <p>Pick what you're here to do.</p>
+      <h2 className="subtitle">Forms and Things of that Sort</h2>
+      <p>Pick what you're here to do!</p>
 
       <div className="forms-choice-row">
         <Button
           label="Submit a project"
           variant={active === "submit" ? "primary" : "secondary"}
-          onClick={() => setActive(active === "submit" ? null : "submit")}
+          onClick={() => handleClick("submit", "https://forms.fillout.com/t/cpkSPtkx7wus")}
         />
         <Button
           label="Redeem pixels"
           variant={active === "prize" ? "primary" : "secondary"}
-          onClick={() => setActive(active === "prize" ? null : "prize")}
+          onClick={() => handleClick("prize", "https://forms.fillout.com/t/2MzaQbUpvWus")}
         />
       </div>
 
-      <div className="form-panel">
-        {active === "submit" && <Submit />}
-        {active === "prize"  && <Prize />}
-      </div>
     </section>
   )
 }

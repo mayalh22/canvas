@@ -18,7 +18,7 @@ export default function Options() {
 
   return (
     <section id="options" className="section">
-      <p className="section-label">explore</p>
+      <p className="section-label">Explore!</p>
       <h2 className="subtitle">What's inside</h2>
 
       <div className="tab-row">
