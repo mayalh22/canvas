@@ -38,7 +38,7 @@ export default function Options() {
         {active === "examples"   && <ExampleArtGrid />}
         {active === "gallery"    && <Gallery />}
         {active === null && (
-          <p className="tab-empty">Select a category above to explore.</p>
+          <p className="tab-empty">Select a category above to explore!</p>
         )}
       </div>
     </section>
