@@ -37,9 +37,8 @@ Canvas is a YSWS for Hack Clubbers who want to see their program hung on their w
 <div className="journal-card">
   <p className="section-label">My notes!</p>
   <p>
-    I kept making generative art and data viz side projects and wondering
-    why isn't there a YSWS for this... So here it is. Ship something pretty,
-    get paintbrushes. Ship something really pretty, get an iPad!
+        Creative coding is the practice of using programming as artistic expression, where algorithms, randomness, and data become the tools instead of a paintbrush. It challenges the idea that code is purely functional and shows that it can be just as expressive as any traditional art form. I wanted a YSWS for that. So here it is. Ship something pretty, get paintbrushes. Ship something really pretty, get an iPad!
+
   </p>
   <p className="section-label">Cool ideas for the future:</p>
   <ul>
