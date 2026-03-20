@@ -14,26 +14,26 @@ const TIERS = [
   {
     pixels: '5 pixels',
     prizes: [
-      { name: 'Procreate',           img: procreate,   note: 'iPad drawing app',             link: 'BLANKLINK.com' },
-      { name: 'Sketchbook',          img: sketchbook,  note: 'Professional drawing app',     link: 'BLANKLINK.com' },
-      { name: 'Micron Pen Set',      img: micron,      note: 'Archival ink pens',            link: 'BLANKLINK.com' },
+      { name: 'Procreate',           img: procreate,   note: 'iPad drawing app',             link: 'https://procreate.com/procreate' },
+      { name: 'Sketchbook',          img: sketchbook,  note: 'Professional drawing app',     link: 'https://www.amazon.com/Sketchbook-Hardcover-Drawing-Acid-Free-Quality/dp/1454931477' },
+      { name: 'Micron Pen Set',      img: micron,      note: 'Archival ink pens',            link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
     ],
   },
   {
     pixels: '10 pixels',
     prizes: [
-            { name: 'Copic Markers',       img: copic,       note: 'Set of alcohol markers',       link: 'BLANKLINK.com' },
+            { name: 'Copic Markers',       img: copic,       note: 'Set of alcohol markers',       link: 'https://www.amazon.com/Copic-Marker-SB12-12-Piece-Sketch/dp/B000MRR3GU?th=1' },
 
-      { name: 'Apple Pencil',        img: applePencil, note: 'For iPad drawing',             link: 'BLANKLINK.com' },
-      { name: 'Adobe Subscription',  img: adobe,       note: 'Creative Cloud access',        link: 'BLANKLINK.com' },
+      { name: 'Apple Pencil',        img: applePencil, note: 'For iPad drawing',             link: 'https://www.apple.com/apple-pencil/' },
+      { name: 'Adobe Subscription',  img: adobe,       note: 'Creative Cloud access',        link: 'https://www.adobe.com/creativecloud/plans.html' },
     ],
   },
   {
     pixels: '30 pixels',
     prizes: [
-      { name: 'AxiDraw Pen Plotter', img: robot,        note: 'Draws your code on paper',     link: 'BLANKLINK.com' },
-      { name: 'iPad',                img: ipad,        note: 'Draw anywhere',                link: 'BLANKLINK.com' },
-      { name: 'Wacom Tablet',        img: wacom,       note: 'Professional drawing tablet',  link: 'BLANKLINK.com' },
+      { name: 'AxiDraw Pen Plotter', img: robot,        note: 'Draws your code on paper',     link: 'https://www.axidraw.com/' },
+      { name: 'iPad',                img: ipad,        note: 'Draw anywhere',                link: 'https://www.apple.com/ipad/' },
+      { name: 'Wacom Tablet',        img: wacom,       note: 'Professional drawing tablet',  link: 'https://www.wacom.com/en-us' },
     ],
   },
 ]
@@ -55,7 +55,7 @@ export default function PrizeGrid() {
                   />
                 )}
                 <a
-                  href={`https://${prize.link}`}
+  href={prize.link}    // <-- use it directly
                   target="_blank"
                   rel="noreferrer"
                   className="section-label"

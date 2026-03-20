@@ -26,39 +26,48 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="header">
-      <div className="header-inner">
-<Link to="/"><img src={wordmark} alt="Canvas" className="wordmark-img" /></Link>
+<header className="header">
+  <div
+    className="header-inner"
+    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}
+  >
+    {/* Wordmark centered and large */}
+    <Link to="/">
+      <img src={wordmark} alt="Canvas" style={{ height: '120px', width: 'auto', display: 'block' }} />
+    </Link>
 
-        <nav className="nav">
-          {ANCHOR_LINKS.map((l) => (
-            <a key={l.label} href={l.href} className="nav-link">{l.label}</a>
-          ))}
-          {PAGE_LINKS.map((l) => (
-            <Link key={l.label} to={l.to} className="nav-link">{l.label}</Link>
-          ))}
-        </nav>
+    {/* Nav links */}
+    <nav className="nav" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+      {ANCHOR_LINKS.map((l) => (
+        <a key={l.label} href={l.href} className="nav-link">{l.label}</a>
+      ))}
+      {PAGE_LINKS.map((l) => (
+        <Link key={l.label} to={l.to} className="nav-link">{l.label}</Link>
+      ))}
+    </nav>
 
-        <div className="header-cta">
-          <Button label="Submit" onClick={() => { window.location.href = '#forms' }} />
-        </div>
+    {/* CTA button */}
+    <div className="header-cta">
+      <Button label="Submit" onClick={() => { window.location.href = '#forms' }} />
+    </div>
 
-        <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-          {open ? 'close' : 'menu'}
-        </button>
-      </div>
+    {/* Hamburger for mobile */}
+    <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+      {open ? 'close' : 'menu'}
+    </button>
+  </div>
 
-      {open && (
-        <nav className="nav-mobile">
-          {ANCHOR_LINKS.map((l) => (
-            <a key={l.label} href={l.href} className="nav-link" onClick={() => setOpen(false)}>{l.label}</a>
-          ))}
-          {PAGE_LINKS.map((l) => (
-            <Link key={l.label} to={l.to} className="nav-link" onClick={() => setOpen(false)}>{l.label}</Link>
-          ))}
-          <Button label="Submit" onClick={() => { setOpen(false); window.location.href = '#forms' }} />
-        </nav>
-      )}
-    </header>
+  {open && (
+    <nav className="nav-mobile" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+      {ANCHOR_LINKS.map((l) => (
+        <a key={l.label} href={l.href} className="nav-link" onClick={() => setOpen(false)}>{l.label}</a>
+      ))}
+      {PAGE_LINKS.map((l) => (
+        <Link key={l.label} to={l.to} className="nav-link" onClick={() => setOpen(false)}>{l.label}</Link>
+      ))}
+      <Button label="Submit" onClick={() => { setOpen(false); window.location.href = '#forms' }} />
+    </nav>
+  )}
+</header>
   )
 }
