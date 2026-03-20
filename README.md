@@ -1,16 +1,3 @@
-# React + Vite
+# CANVAS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Canvas is a You Ship We Ship by Hack Club where you earn pixels for every hour you spend making code-generated art. Ship a generative sketch, a pixel art tool, an ASCII renderer, a live shader: anything where the output is something worth looking at. Each verified hour earns you one pixel, and you can spend your pixels on real art supplies, Adobe subscriptions, an iPad, or a pen plotter. Head to https://canvas-m.vercel.app to learn more and submit your work.
