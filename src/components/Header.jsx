@@ -46,10 +46,7 @@ export default function Header() {
       ))}
     </nav>
 
-    {/* CTA button */}
-    <div className="header-cta">
-      <Button label="Submit" onClick={() => { window.location.href = '#forms' }} />
-    </div>
+
 
     {/* Hamburger for mobile */}
     <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">

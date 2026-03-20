@@ -8,7 +8,7 @@ export default function About() {
       <Grid cols={2}>
         <div className="about-main">
           <h1 className="title">CANVAS</h1>
-          <h1 className="subtitle">Code something worth looking at.</h1>
+          <h1 className="subtitle">Code something worth looking at!</h1>
           <p>
 You know how to write code. You’ve worked with functions, loops, API’s, anything useful. Code is inherently useful! But it can also look nice.
 Canvas is a YSWS for Hack Clubbers who want to see their program hung on their wall.
@@ -40,6 +40,12 @@ Canvas is a YSWS for Hack Clubbers who want to see their program hung on their w
     why isn't there a YSWS for this... So here it is. Ship something pretty,
     get paintbrushes. Ship something really pretty, get an iPad!
   </p>
+  <p className="section-label">Cool ideas for the future:</p>
+  <ul>
+    <li>Maybe have a "gallery" section where people can share their work?</li>
+    <li>I'd like to allow people to vote on slack for their favorite...</li>
+    <li>Absolutely definitely I will add a prize option of getting art printed on sweatshirts, stickers, etc</li>
+  </ul>
   <p className="journal-date">March 2026</p>
   <Button label="RSVP" onClick={() => window.open('https://forms.fillout.com/t/rYV9dBqDLqus', '_blank')} />
 </div>

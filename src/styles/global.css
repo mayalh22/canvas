@@ -41,7 +41,8 @@ img { display: block; max-width: 100%; }
 body {
   font-family: var(--font-mono);
   font-weight: 300; font-size: 1rem; line-height: 1.7;
-  color: var(--lime); background-color: var(--bg); cursor: crosshair;
+  color: var(--lime); background-color: var(--bg); cursor: url('/Mouse.png') 13 32, crosshair;
+
 }
 p { color: var(--lime); font-size: 1rem; line-height: 1.7; }
 
@@ -169,5 +170,8 @@ details[open] .faq-indicator { transform: rotate(-135deg); }
 /* ─── FOOTER ─────────────────────────────────── */
 .footer { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem 2rem; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6rem; align-items: center; }
 .footer-copy  { font-size: 1rem; color: var(--teal); }
+
+.footer-top { display: flex; justify-content: center; margin-bottom: 1.5rem; }
+.footer-bottom { display: flex; align-items: center; gap: 2rem; }
