@@ -25,7 +25,7 @@ export default function ExampleArtGrid() {
     <div>
       <p className="section-label">Inspiration Below...Click on pics for more info!</p>
       <h2 className="subtitle">Example Art</h2>
-      <p>Here are some examples of the kind of work Canvas is for. Click any to open it.</p>
+      <p>Here are some examples of the kind of work Canvas is meant for.</p>
       <br />
       <Grid cols={2}>
         {EXAMPLES.map((ex) => (
