@@ -175,3 +175,4 @@ details[open] .faq-indicator { transform: rotate(-135deg); }
 
 .footer-top { display: flex; justify-content: center; margin-bottom: 1.5rem; }
 .footer-bottom { display: flex; align-items: center; gap: 2rem; }
+.section-icon { width: 128px; height: 128px; image-rendering: crisp-edges; }

@@ -1,3 +1,6 @@
+import buttons from '../assets/icons/Buttons.png'
+
+
 const FAQS = [
   { q: "What counts as art? What doesn't?", a: "The primary output of your program must be visual: pixel art, generative graphics, data viz, ASCII art, live shaders, and so on. A todo app with nice CSS doesn't qualify because the output is a list, not art. Grey areas are decided by reviewers!" },
   { q: "Does my project have to be original?", a: "You can remix or be inspired by existing work, but you must note it in your artist statement. The code you write must be your own." },
@@ -16,8 +19,12 @@ const FAQS = [
 export default function FAQ() {
   return (
     <section id="faq" className="section">
-      <p className="section-label">If you have questions...!</p>
-      <h2 className="subtitle">FAQ</h2>
+<div className="rule-item" style={{ justifyContent: 'space-between' }}>        <div>
+          <p className="section-label">If you have questions...!</p>
+          <h2 className="subtitle">FAQ</h2>
+        </div>
+        <img src={buttons} alt="" className="section-icon" />
+      </div>
       <div className="faq-list">
         {FAQS.map((item, i) => (
           <details key={i} className="faq-item">

@@ -1,3 +1,3 @@
 export default function () {
-  return <div>Example Art go here</div>;
+  return <div>Examples of Art will go here (when I do them lol)</div>;
 }

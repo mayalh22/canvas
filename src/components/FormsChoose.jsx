@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Button from "./Helpful/Button"
+import yarn from '../assets/icons/Yarn.png'
 
 export default function FormsChoose() {
   const [active, setActive] = useState(null)
@@ -11,9 +12,14 @@ export default function FormsChoose() {
 
   return (
     <section id="forms" className="section">
-      <p className="section-label">Ready to submit or spend pixels?</p>
-      <h2 className="subtitle">Forms and Things of that Sort</h2>
-      <p>Pick what you're here to do!</p>
+      <div className="rule-item" style={{ justifyContent: 'space-between' }}>
+        <div>
+          <p className="section-label">Ready to submit or spend pixels?</p>
+          <h2 className="subtitle">Forms and Things of that Sort</h2>
+          <p>Pick what you're here to do (obv. this counts only when Canvas has launched)!</p>
+        </div>
+        <img src={yarn} alt="" className="section-icon" />
+      </div>
 
       <div className="forms-choice-row">
         <Button
@@ -27,7 +33,6 @@ export default function FormsChoose() {
           onClick={() => handleClick("prize", "https://forms.fillout.com/t/2MzaQbUpvWus")}
         />
       </div>
-
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import Grid from "./Helpful/Grid"
 import Button from "./Helpful/Button"
+import paintBuckets from '../assets/icons/PaintBuckets.png'
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ Canvas is a YSWS for Hack Clubbers who want to see their program hung on their w
           <p>
             Ship something visual to earn pixels!
           </p>
-
+<img src={paintBuckets} alt="" className="section-icon" />
           <div className="rule-list">
             <div className="rule-item">
               <span className="rule-mark rule-mark-lime" />
@@ -47,7 +48,7 @@ Canvas is a YSWS for Hack Clubbers who want to see their program hung on their w
     <li>Absolutely definitely I will add a prize option of getting art printed on sweatshirts, stickers, etc</li>
   </ul>
   <p className="journal-date">March 2026</p>
-  <Button label="RSVP" onClick={() => window.open('https://forms.fillout.com/t/rYV9dBqDLqus', '_blank')} />
+  <Button label="RSVP here... or else!!" onClick={() => window.open('https://forms.fillout.com/t/rYV9dBqDLqus', '_blank')} />
 </div>
       </Grid>
     </section>

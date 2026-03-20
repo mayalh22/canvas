@@ -1,4 +1,5 @@
 import Grid from './Helpful/Grid'
+import brush from '../assets/icons/BrushandPaintTube.png'
 
 import procreate   from '../assets/prizes/Procreate.png'
 import sketchbook  from '../assets/prizes/Sketchbook.png'
@@ -14,25 +15,25 @@ const TIERS = [
   {
     pixels: '5 pixels',
     prizes: [
-      { name: 'Procreate',      img: procreate,   note: 'The industry standard for digital illustration on iPad.',    link: 'https://procreate.com/procreate' },
-      { name: 'Sketchbook',     img: sketchbook,  note: 'A solid hardcover sketchbook for ideas that haeve to live off-screen!', link: 'https://www.amazon.com/Sketchbook-Hardcover-Drawing-Acid-Free-Quality/dp/1454931477' },
-      { name: 'Micron Pen Set', img: micron,      note: 'Archival pigment ink pens used by illustrators and architects.', link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
+      { name: 'Procreate',      img: procreate,   note: 'The iPad drawing app. If you know, you know.',                              link: 'https://procreate.com/procreate' },
+      { name: 'Sketchbook',     img: sketchbook,  note: 'A good hardcover sketchbook. For when you need to think away from a screen.', link: 'https://www.amazon.com/Sketchbook-Hardcover-Drawing-Acid-Free-Quality/dp/1454931477' },
+      { name: 'Micron Pen Set', img: micron,      note: 'Archival ink pens. Fine lines, no bleeding, lasts forever.',                 link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
     ],
   },
   {
     pixels: '10 pixels',
     prizes: [
-      { name: 'Copic Markers',      img: copic,       note: 'Refillable alcohol markers trusted by manga artists and designers worldwid!.', link: 'https://www.amazon.com/Copic-Marker-SB12-12-Piece-Sketch/dp/B000MRR3GU?th=1' },
-      { name: 'Apple Pencil',       img: applePencil, note: 'Low latency, pressure sensitive, (the best way to draw on an iPad).',       link: 'https://www.apple.com/apple-pencil/' },
-      { name: 'Adobe Subscription', img: adobe,       note: 'Full Creative Cloud access: Photoshop, Illustrator, After Effects, etc.', link: 'https://www.adobe.com/creativecloud/plans.html' },
+      { name: 'Copic Markers',      img: copic,       note: 'Refillable alcohol markers. The real ones.',                                     link: 'https://www.amazon.com/Copic-Marker-SB12-12-Piece-Sketch/dp/B000MRR3GU?th=1' },
+      { name: 'Apple Pencil',       img: applePencil, note: 'Pressure sensitive, low latency, works exactly how you expect it to.',            link: 'https://www.apple.com/apple-pencil/' },
+      { name: 'Adobe Subscription', img: adobe,       note: 'Full Creative Cloud. Photoshop, Illustrator, After Effects, the whole thing.',    link: 'https://www.adobe.com/creativecloud/plans.html' },
     ],
   },
   {
     pixels: '30 pixels',
     prizes: [
-      { name: 'AxiDraw Pen Plotter', img: robot, note: 'A machine that draws your code on real paper with a real pen. Very very cool...', link: 'https://www.axidraw.com/' },
-      { name: 'iPad',                img: ipad,  note: 'Pair it with Procreate and the Apple Pencil?!',        link: 'https://www.apple.com/ipad/' },
-      { name: 'Wacom Tablet',        img: wacom, note: 'The go-to drawing tablet for digital artists who work at a desk.',                 link: 'https://www.wacom.com/en-us' },
+      { name: 'AxiDraw Pen Plotter', img: robot, note: 'Draws your code on actual paper with an actual pen.',         link: 'https://www.axidraw.com/' },
+      { name: 'iPad',                img: ipad,  note: 'You know what an iPad is.',                                   link: 'https://www.apple.com/ipad/' },
+      { name: 'Wacom Tablet',        img: wacom, note: 'The standard drawing tablet. Serious tool for serious work.',  link: 'https://www.wacom.com/en-us' },
     ],
   },
 ]
@@ -40,9 +41,20 @@ const TIERS = [
 export default function PrizeGrid() {
   return (
     <div className="rule-list">
+
+      <div className="about-main">
+        <div className="rule-item">
+          <img src={brush} alt="" className="section-icon" />
+          <div>
+            <h2 className="subtitle">Prizes</h2>
+            <p>Every verified hour of work earns you one pixel. Spend your pixels on real art supplies, professional tools, or hardware. Prizes are redeemed through a separate form and shipped to you directly.</p>
+          </div>
+        </div>
+      </div>
+
       {TIERS.map((tier) => (
-        <div key={tier.pixels}>
-          <h3 className="subtitle">{tier.pixels}</h3>
+        <div key={tier.pixels} className="rule-list">
+          <p className="section-label">{tier.pixels}</p>
           <Grid cols={3}>
             {tier.prizes.map((prize) => (
               <a
@@ -60,6 +72,7 @@ export default function PrizeGrid() {
           </Grid>
         </div>
       ))}
+
     </div>
   )
 }

@@ -36,16 +36,11 @@ export default function Header() {
 
 
     {/* Hamburger for mobile */}
-    <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-      {open ? 'close' : 'menu'}
-    </button>
+
   </div>
 
   {open && (
     <nav className="nav-mobile" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-      {ANCHOR_LINKS.map((l) => (
-        <a key={l.label} href={l.href} className="nav-link" onClick={() => setOpen(false)}>{l.label}</a>
-      ))}
       {PAGE_LINKS.map((l) => (
         <Link key={l.label} to={l.to} className="nav-link" onClick={() => setOpen(false)}>{l.label}</Link>
       ))}
