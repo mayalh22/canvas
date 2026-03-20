@@ -70,9 +70,26 @@ export default function PrizeGrid() {
               </a>
             ))}
           </Grid>
-        </div>
-      ))}
 
+        </div>
+        
+      ))}
+<div className="journal-card">
+        <p className="section-label">Also brainstorming...</p>
+        <p>Some prize ideas I am still thinking about:</p>
+        <div className="rule-list">
+          <div className="rule-item"><span className="rule-mark rule-mark-lime" />  <p>Kits of scrap materials, ribbons, buttons, and paper</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-pink" />  <p>Washi tape, stickers, stamps, and inks</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-teal" />  <p>Small crafting tools like cutters, glue pens, and embossing tools</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-lime" />  <p>Digital printing credits for DIY prints</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-pink" />  <p>Mini cameras or scanners for documenting projects</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-teal" />  <p>Microcontrollers or LEDs for hybrid interactive crafts</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-lime" />  <p>Gift cards to craft stores</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-pink" />  <p>Theme packs like metallic papers, vintage ephemera, and recycled materials</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-teal" />  <p>3D printer access to make small objects</p></div>
+          <div className="rule-item"><span className="rule-mark rule-mark-lime" />  <p>Publishing or display opportunities like a gallery wall or shared online scrapbook</p></div>
+        </div>
+      </div>
     </div>
   )
 }

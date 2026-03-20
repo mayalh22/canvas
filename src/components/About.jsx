@@ -11,9 +11,7 @@ export default function About() {
           <h1 className="title">CANVAS</h1>
           <h1 className="subtitle">Code something worth looking at!</h1>
           <p>
-You know how to write code. You’ve worked with functions, loops, API’s, anything useful. Code is inherently useful! But it can also look nice.
-Canvas is a YSWS for Hack Clubbers who want to see their program hung on their wall.
-          </p>
+You know how to write code: you’ve used functions, loops, APIs, and all other types of very impressive tools...but code isn’t just useful, it can be beautiful too! Canvas is a YSWS for Hack Clubbers who want to see their programs turned into art and hung on their wall.          </p>
           <p>
             Ship something visual to earn pixels!
           </p>
