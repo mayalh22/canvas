@@ -31,7 +31,6 @@ export default function Options() {
           />
         ))}
       </div>
-
       <div className="tab-panel">
         {active === "prizes"     && <PrizeGrid />}
         {active === "challenges" && <ChallengeGrid />}

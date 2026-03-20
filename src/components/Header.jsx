@@ -8,6 +8,8 @@ const PAGE_LINKS = [
   { label: 'Prizes',     to: '/prizes'    },
   { label: 'Challenges', to: '/challenges'},
   { label: 'Gallery',    to: '/gallery'   },
+    { label: 'Tutorials',  to: '/tutorials' },
+
   { label: 'FAQ',        to: '/faq'       },
 ]
 

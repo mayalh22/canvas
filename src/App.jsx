@@ -9,6 +9,8 @@ import FAQPage from './pages/FAQPage'
 import PrizeGrid from './components/PrizeGrid'
 import ChallengeGrid from './components/ChallengeGrid'
 import Gallery from './components/Gallery'
+import TutorialsPage from './pages/TutorialsPage'
+
 
 function useScrollReveal() {
   useEffect(() => {
@@ -56,6 +58,8 @@ export default function App() {
           <Route path="/prizes" element={<PrizePage />} />
           <Route path="/challenges" element={<ChallengePage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/tutorials" element={<TutorialsPage />} />
+
         </Routes>
       </main>
       <Footer />
