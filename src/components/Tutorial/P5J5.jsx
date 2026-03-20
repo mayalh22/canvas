@@ -31,7 +31,7 @@ export default function P5J5() {
 }`}</code></pre>
         <p><code>circle(x, y, diameter)</code> draws a circle at the given position. The top left corner of the canvas is position (0, 0) and the bottom right is (600, 600), so (300, 300) is the center. You should see a white circle appear! You can replace <code>circle()</code> with <code>rect(x, y, width, height)</code> for a rectangle or <code>line(x1, y1, x2, y2)</code> for a line.</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={step3} alt="White circle centered on dark canvas" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div></div>
 
@@ -65,7 +65,7 @@ function draw() {
 }`}</code></pre>
         <p><code>random(255)</code> returns a different number between 0 and 255 every time it is called, so each circle gets a different color. The fourth argument in <code>fill()</code> sets the opacity, where 0 is fully transparent and 255 is fully opaque. <code>random(width)</code> and <code>random(height)</code> use the canvas dimensions so the circles always stay within bounds. The sketch builds up over time since nothing clears it between frames! You can lock the hue by replacing two of the three <code>random(255)</code> calls with fixed values.</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={step6} alt="Colorful circles building up on a dark canvas" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div>      </div>
 
@@ -92,7 +92,7 @@ function draw() {
 }`}</code></pre>
         <p><code>cos()</code> and <code>sin()</code> produce values that cycle between -1 and 1. Multiplying <code>frameCount</code> by <code>0.02</code> controls how fast the angle advances each frame. Multiplying the result by <code>200</code> sets the radius of the orbit. The semi-transparent rectangle has a fourth argument of <code>25</code>, which is its opacity — a lower number produces a longer trail because old frames fade more slowly. You can change <code>0.02</code> to speed up the motion and <code>200</code> to change the orbit size!</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={step7} alt="Circle orbiting the center with a fading trail" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div></div>
 

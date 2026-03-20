@@ -35,7 +35,7 @@ export default function CSS() {
 }`}</code></pre>
         <p><code>border-radius</code> rounds the corners of an element. At <code>50%</code> all four corners are rounded equally so a square becomes a circle. You can produce organic blob forms by using four separate values like <code>border-radius: 60% 40% 30% 70%</code> — each value controls one corner. I really enjoy experimenting with this one!</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={step2} alt="Teal circle centered on a dark background" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div>
       </div>
@@ -70,7 +70,7 @@ export default function CSS() {
 .c { width: 80px;  height: 80px;  background: #fbcbbc; top: 200px; left: 60px;  }`}</code></pre>
         <p><code>position: relative</code> on the parent establishes a coordinate system for its children. <code>position: absolute</code> on each child removes them from the normal document flow and lets you place them using <code>top</code>, <code>left</code>, <code>right</code>, and <code>bottom</code> relative to the parent. Without the <code>position: relative</code> parent, the children would position themselves relative to the whole page instead.</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={step4} alt="Three overlapping colored circles on a dark background" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div>      </div>
 
@@ -88,7 +88,7 @@ export default function CSS() {
 .c { animation: float 4s ease-in-out infinite 1.6s; }`}</code></pre>
         <p><code>translateY(-30px)</code> moves the element 30 pixels upward — negative values go up, positive values go down. <code>scale(1.1)</code> makes the element 10 percent larger at the midpoint of the animation. The last value in each <code>animation</code> declaration is the delay before the animation starts. Offsetting each element by about 0.8 seconds prevents them from moving together. You can also animate the <code>background</code> property inside the keyframes to shift colors at the same time as position!</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <video src={step5} autoPlay loop muted playsInline style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div>      <h3 className="section-label">Step 6. Add detail with pseudo-elements</h3>
         <p>Every element has two invisible children called <code>::before</code> and <code>::after</code>. Setting <code>content: ''</code> and giving them a size makes them visible. I use these to add extra shapes without adding any HTML at all!</p>

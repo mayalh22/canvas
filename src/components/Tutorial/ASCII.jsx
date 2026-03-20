@@ -11,7 +11,7 @@ export default function ASCII() {
         <h3 className="section-label">Step 1. Understand the concept</h3>
         <p>Images are made of pixels, each with red, green, and blue (RGB) values. We combine these values into a single brightness value. Then we map this brightness to a character in a string ordered from lightest to darkest. When printed in a grid, this creates an ASCII version of the image.</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={concept} alt="Photo next to the same image rendered as ASCII characters" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div>      </div>
 
@@ -144,7 +144,7 @@ function convert(pixels, cols, rows) {
 }`}</code></pre>
         <p>The <code>CHARS</code> string runs from lightest to darkest, so we invert the brightness with <code>255 - brightness</code> to map dark pixels to heavy characters. The longer character set gives much finer tonal gradations than a short one. The newline <code>{`'\\n'`}</code> at the end of each row ensures the ASCII forms a proper grid.</p>
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
-  <p className="section-label">It should <br /> look like this:</p>
+  <p className="section-label"><br /> <br /> It should look like this:</p>
   <img src={result} alt="Portrait converted to ASCII art displayed in the browser" style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
 </div>      </div>
 
