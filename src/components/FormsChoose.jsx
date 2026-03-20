@@ -11,7 +11,7 @@ export default function FormsChoose() {
 
   return (
     <section id="forms" className="section">
-      <p className="section-label">ready?</p>
+      <p className="section-label">Ready to submit or spend pixels?</p>
       <h2 className="subtitle">Forms and Things of that Sort</h2>
       <p>Pick what you're here to do!</p>
 
