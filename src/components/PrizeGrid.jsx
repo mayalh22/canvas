@@ -15,25 +15,25 @@ const TIERS = [
   {
     pixels: '5 pixels',
     prizes: [
-      { name: 'Procreate',      img: procreate,   note: 'The iPad drawing app. If you know, you know.',                              link: 'https://procreate.com/procreate' },
+      { name: 'Procreate',      img: procreate,   note: 'The iPad drawing app. Very very very cool!',                              link: 'https://procreate.com/procreate' },
       { name: 'Sketchbook',     img: sketchbook,  note: 'A good hardcover sketchbook. For when you need to think away from a screen.', link: 'https://www.amazon.com/Sketchbook-Hardcover-Drawing-Acid-Free-Quality/dp/1454931477' },
-      { name: 'Micron Pen Set', img: micron,      note: 'Archival ink pens. Fine lines, no bleeding, lasts forever.',                 link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
+      { name: 'Micron Pen Set', img: micron,      note: 'Archival ink pens: ine lines, no bleeding, and lasts forever!',                 link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
     ],
   },
   {
     pixels: '20 pixels',
     prizes: [
-      { name: 'Copic Markers',      img: copic,       note: 'Refillable alcohol markers. The real ones.',                                     link: 'https://www.amazon.com/Copic-Marker-SB12-12-Piece-Sketch/dp/B000MRR3GU?th=1' },
-      { name: 'Apple Pencil',       img: applePencil, note: 'Pressure sensitive, low latency, works exactly how you expect it to.',            link: 'https://www.apple.com/apple-pencil/' },
-      { name: 'Adobe Subscription', img: adobe,       note: 'Full Creative Cloud. Photoshop, Illustrator, After Effects, the whole thing.',    link: 'https://www.adobe.com/creativecloud/plans.html' },
+      { name: 'Copic Markers',      img: copic,       note: 'Refillable alcohol markers (really!!!!).',                                     link: 'https://www.amazon.com/Copic-Marker-SB12-12-Piece-Sketch/dp/B000MRR3GU?th=1' },
+      { name: 'Apple Pencil',       img: applePencil, note: 'Works exactly how you expect it to...',            link: 'https://www.apple.com/apple-pencil/' },
+      { name: 'Adobe Subscription', img: adobe,       note: 'Full Creative Cloud: Photoshop, Illustrator, After Effects, etc...',    link: 'https://www.adobe.com/creativecloud/plans.html' },
     ],
   },
   {
     pixels: '60 pixels',
     prizes: [
       { name: 'AxiDraw Pen Plotter', img: robot, note: 'Draws your code on actual paper with an actual pen.',         link: 'https://www.axidraw.com/' },
-      { name: 'iPad',                img: ipad,  note: 'You know what an iPad is.',                                   link: 'https://www.apple.com/ipad/' },
-      { name: 'Wacom Tablet',        img: wacom, note: 'The standard drawing tablet. Serious tool for serious work.',  link: 'https://www.wacom.com/en-us' },
+      { name: 'iPad',                img: ipad,  note: 'You already know what an iPad is!',                                   link: 'https://www.apple.com/ipad/' },
+      { name: 'Wacom Tablet',        img: wacom, note: 'The standard drawing tablet: serious tool for serious work.',  link: 'https://www.wacom.com/en-us' },
     ],
   },
 ]
