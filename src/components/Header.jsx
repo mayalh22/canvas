@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Button from './Helpful/Button'
+import wordmark from '../assets/Wordmark.png'
+
 
 /*
   NAV LINK RULES:
@@ -26,7 +28,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-inner">
-        <Link to="/" className="wordmark">Canvas</Link>
+<img src={wordmark} alt="Canvas" className="wordmark-img" />
 
         <nav className="nav">
           {ANCHOR_LINKS.map((l) => (
