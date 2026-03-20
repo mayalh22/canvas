@@ -21,7 +21,7 @@ const TIERS = [
     ],
   },
   {
-    pixels: '10 pixels',
+    pixels: '20 pixels',
     prizes: [
       { name: 'Copic Markers',      img: copic,       note: 'Refillable alcohol markers. The real ones.',                                     link: 'https://www.amazon.com/Copic-Marker-SB12-12-Piece-Sketch/dp/B000MRR3GU?th=1' },
       { name: 'Apple Pencil',       img: applePencil, note: 'Pressure sensitive, low latency, works exactly how you expect it to.',            link: 'https://www.apple.com/apple-pencil/' },
@@ -29,7 +29,7 @@ const TIERS = [
     ],
   },
   {
-    pixels: '30 pixels',
+    pixels: '60 pixels',
     prizes: [
       { name: 'AxiDraw Pen Plotter', img: robot, note: 'Draws your code on actual paper with an actual pen.',         link: 'https://www.axidraw.com/' },
       { name: 'iPad',                img: ipad,  note: 'You know what an iPad is.',                                   link: 'https://www.apple.com/ipad/' },
