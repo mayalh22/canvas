@@ -1,4 +1,4 @@
-import buttons from '../assets/icons/Buttons.png'
+import buttons from '../assets/icons/buttons.png'
 
 
 const FAQS = [

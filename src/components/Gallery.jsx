@@ -1,4 +1,4 @@
-import artInFrame from '../assets/icons/ArtinFrame.png'
+import artInFrame from '../assets/icons/artinframe.png'
 
 export default function Gallery() {
   return (

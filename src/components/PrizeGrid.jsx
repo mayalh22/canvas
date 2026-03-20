@@ -1,15 +1,15 @@
 import Grid from './Helpful/Grid'
-import brush from '../assets/icons/BrushandPaintTube.png'
+import brush from '../assets/icons/brushandpainttube.png'
 
-import procreate   from '../assets/prizes/Procreate.png'
-import sketchbook  from '../assets/prizes/Sketchbook.png'
-import copic       from '../assets/prizes/Copic.png'
-import micron      from '../assets/prizes/Micron.png'
-import applePencil from '../assets/prizes/ApplePencil.png'
-import adobe       from '../assets/prizes/Adobe.png'
-import robot       from '../assets/prizes/Robot.png'
-import wacom       from '../assets/prizes/Wacom.png'
-import ipad        from '../assets/prizes/iPad.png'
+import procreate   from '../assets/prizes/procreate.png'
+import sketchbook  from '../assets/prizes/sketchbook.png'
+import copic       from '../assets/prizes/copic.png'
+import micron      from '../assets/prizes/micron.png'
+import applePencil from '../assets/prizes/applepencil.png'
+import adobe       from '../assets/prizes/adobe.png'
+import robot       from '../assets/prizes/robot.png'
+import wacom       from '../assets/prizes/wacom.png'
+import ipad        from '../assets/prizes/ipad.png'
 
 const TIERS = [
   {

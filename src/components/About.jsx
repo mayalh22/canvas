@@ -1,6 +1,6 @@
 import Grid from "./Helpful/Grid"
 import Button from "./Helpful/Button"
-import paintBuckets from '../assets/icons/PaintBuckets.png'
+import paintBuckets from '../assets/icons/paintbuckets.png'
 
 export default function About() {
   return (

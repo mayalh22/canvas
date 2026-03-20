@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Button from "./Helpful/Button"
-import yarn from '../assets/icons/Yarn.png'
+import yarn from '../assets/icons/yarn.png'
 
 export default function FormsChoose() {
   const [active, setActive] = useState(null)

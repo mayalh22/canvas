@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Button from './Helpful/Button'
-import wordmark from '../assets/Wordmark.png'
+import wordmark from '../assets/wordmark.png'
 
 const PAGE_LINKS = [
   { label: 'About',      to: '/#about'    },
