@@ -176,3 +176,7 @@ details[open] .faq-indicator { transform: rotate(-135deg); }
 .footer-top { display: flex; justify-content: center; margin-bottom: 1.5rem; }
 .footer-bottom { display: flex; align-items: center; gap: 2rem; }
 .section-icon { width: 128px; height: 128px; image-rendering: crisp-edges; }
+
+code { background: var(--pink); color: var(--divider); padding: 0.1rem 0.3rem; font-family: var(--font-mono); font-size: 0.9em; }
+pre  { background: var(--red); color: var(-divider); padding: 1rem; overflow-x: auto; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0; }
+pre code { background: none; color: var(--divider); padding: 0; }
