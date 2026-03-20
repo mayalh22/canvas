@@ -23,7 +23,7 @@ const EXAMPLES = [
 export default function ExampleArtGrid() {
   return (
     <div>
-      <p className="section-label">Inspiration</p>
+      <p className="section-label">Inspiration Below...Click on pics for more info!</p>
       <h2 className="subtitle">Example Art</h2>
       <p>Here are some examples of the kind of work Canvas is for. Click any to open it.</p>
       <br />
