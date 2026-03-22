@@ -17,7 +17,7 @@ const TIERS = [
     prizes: [
       { name: 'Procreate',      img: procreate,   note: 'The iPad drawing app. Very very very cool!',                              link: 'https://procreate.com/procreate' },
       { name: 'Sketchbook',     img: sketchbook,  note: 'A good hardcover sketchbook. For when you need to think away from a screen.', link: 'https://www.amazon.com/Sketchbook-Hardcover-Drawing-Acid-Free-Quality/dp/1454931477' },
-      { name: 'Micron Pen Set', img: micron,      note: 'Archival ink pens: ine lines, no bleeding, and lasts forever!',                 link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
+      { name: 'Micron Pen Set', img: micron,      note: 'Archival ink pens: fine lines, no bleeding, and lasts forever!',                 link: 'https://www.amazon.com/Sakura-Pigma-Micron-Fineliner-drawing/dp/B07D5TT6LS' },
     ],
   },
   {

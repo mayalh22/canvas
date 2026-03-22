@@ -90,8 +90,11 @@ export default function CSS() {
 <div className="rule-item" style={{justifyContent: 'space-between', alignItems: 'flex-start'}}>
   <p className="section-label"><br /> <br /> It should look like this:</p>
   <video src={step5} autoPlay loop muted playsInline style={{width: '55%', height: 'auto', marginLeft: 'auto'}} />
-</div>      <h3 className="section-label">Step 6. Add detail with pseudo-elements</h3>
-        <p>Every element has two invisible children called <code>::before</code> and <code>::after</code>. Setting <code>content: ''</code> and giving them a size makes them visible. I use these to add extra shapes without adding any HTML at all!</p>
+</div>
+      </div>
+
+      <div>
+        <h3 className="section-label">Step 6. Add detail with pseudo-elements</h3>        <p>Every element has two invisible children called <code>::before</code> and <code>::after</code>. Setting <code>content: ''</code> and giving them a size makes them visible. I use these to add extra shapes without adding any HTML at all!</p>
         <pre><code>{`.a::before {
   content: '';
   display: block;
