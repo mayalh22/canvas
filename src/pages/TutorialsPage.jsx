@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Button from '../components/Helpful/Button'
-import P5J5 from '../components/Tutorial/P5J5'
+import P5JS from '../components/Tutorial/P5JS'
 import ASCII from '../components/Tutorial/ASCII'
 import CSS from '../components/Tutorial/CSS'
 
@@ -31,7 +31,7 @@ export default function TutorialsPage() {
       </div>
       <br />
       <div className="tab-panel">
-        {active === 'p5'    && <P5J5 />}
+        {active === 'p5'    && <P5JS />}
         {active === 'ascii' && <ASCII />}
         {active === 'css'   && <CSS />}
         {active === null    && <p className="tab-empty">Select a tutorial above to get started!</p>}

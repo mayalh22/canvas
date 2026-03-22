@@ -2,7 +2,7 @@ import step3 from '../../assets/tutorials/p5-step3.png'
 import step6 from '../../assets/tutorials/p5-step6.png'
 import step7 from '../../assets/tutorials/p5-step7.png'
 
-export default function P5J5() {
+export default function P5JS() {
   return (
     <div className="rule-list">
       <h2 className="subtitle">Generative Drawing with P5.js</h2>
