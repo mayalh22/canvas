@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react"
 import Grid from "./Helpful/Grid"
 import Button from "./Helpful/Button"
 import paintBuckets from '../assets/icons/paintbuckets.png'
@@ -52,15 +51,18 @@ function P5Sketch() {
           p.noStroke()
         }
 
-        p.draw = () => {
-          // only draws on mouse movement — nothing happens without input
+        p.draw = () => {}
+
+        p.windowResized = () => {
+          p.resizeCanvas(el.offsetWidth, 300)
+          p.background('#1f1c1f')
         }
 
         p.mouseMoved = () => {
           if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
             const col = p.color(p.random(colors))
-col.setAlpha(120)
-p.fill(col)
+            col.setAlpha(120)
+            p.fill(col)
             p.circle(p.mouseX, p.mouseY, p.random(10, 80))
           }
         }
@@ -78,8 +80,8 @@ p.fill(col)
 
   return (
     <div>
-<p className="section-label">Here's a cool example I made in P5.js. Move your mouse over this!...and learn how in the tutorial tab 
-</p>      <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
+      <p className="section-label">Here's a cool example I made in P5.js. Move your mouse over this!...and learn how in the tutorial tab</p>
+      <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
     </div>
   )
 }
