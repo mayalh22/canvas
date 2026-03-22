@@ -18,7 +18,7 @@ function useHideHeaderOnScroll() {
       const current = window.scrollY
       const header = document.querySelector('.header')
       if (!header) return
-      if (current > last && current > 10) {
+      if (current > last && current > 0.0001) {
         header.classList.add('header-hidden')
       } else {
         header.classList.remove('header-hidden')
