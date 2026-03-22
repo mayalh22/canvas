@@ -2,6 +2,7 @@ import Grid from "./Helpful/Grid"
 import Button from "./Helpful/Button"
 import paintBuckets from '../assets/icons/paintbuckets.png'
 import useTypewriter, { chainDelays } from '../useTypewriter'
+import { useEffect, useRef } from "react"
 
 const LEFT_TEXTS = [
   "You know how to write code: you've used functions, loops, APIs, and all other types of very impressive tools...but code isn't just useful, it can be beautiful too! Canvas is a YSWS for Hack Clubbers who want to see their programs turned into art and hung on their wall.",
