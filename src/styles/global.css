@@ -176,9 +176,6 @@ code { background: var(--pink); color: var(--divider); padding: 0.1rem 0.3rem; f
 pre  { background: var(--red); color: var(--divider); padding: 1rem; overflow-x: auto; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0; }
 pre code { background: none; color: var(--divider); padding: 0; }
 
-/* ─── PASTE THESE INTO global.css ─── */
-
-/* ─── TYPEWRITER CURSOR ──────────────────────── */
 .type-cursor {
   display: inline-block;
   color: var(--teal);
