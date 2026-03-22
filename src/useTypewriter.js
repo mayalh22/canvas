@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-const SPEED = 60
+const SPEED = 30
 
 export default function useTypewriter(text, startAfterMs = 0) {
   const [displayed, setDisplayed] = useState('')

@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-
+  .prize-card:hover { transform: translateY(-4px); }
   align-items: left; 
   text-align: left;
      
@@ -86,7 +86,9 @@ p { color: var(--lime); font-size: 1rem; line-height: 1.7; }
 .app  { min-height: 100vh; display: flex; flex-direction: column; }
 /* z-index 1 on all real content keeps it above .stars (z-index 0) */
 .header, main, .footer { position: relative; z-index: 1; }
+.header { position: sticky; top: 0; background: var(--bg); border-bottom: 2px solid var(--divider); }
 main { flex: 1; }
+#about { scroll-margin-top: 200px; }
 
 .section { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; border-bottom: 2px solid var(--divider); }
 
@@ -183,3 +185,4 @@ pre code { background: none; color: var(--divider); padding: 0; }
   animation: cursor-blink 0.7s steps(1) infinite;
 }
 @keyframes cursor-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+ul { padding-left: 1.2rem; } li { color: var(--lime); margin-bottom: 0.3rem; }
