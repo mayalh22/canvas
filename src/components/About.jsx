@@ -7,7 +7,7 @@ import useTypewriter, { chainDelays } from '../useTypewriter'
 const LEFT_TEXTS = [
   "You know how to write code: you've used functions, loops, APIs, and all other types of very impressive tools...but code isn't just useful, it can be beautiful too! Canvas is a YSWS for Hack Clubbers who want to see their programs turned into art and hung on their wall.",
   "Ship something visual to earn pixels!",
-  "The primary output must be visual and non-functional",
+  "The primary output must be visual (it can also be functional)",
   "Ex: pixel art tool qualifies, but a todo app with nice CSS does not.",
   "Each verified hour earns 1 pixel. Check the prizes tab for things to do with those pixels!!",
 ]
