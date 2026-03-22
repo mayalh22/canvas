@@ -14,7 +14,7 @@
   --font-display: 'Hanken Grotesk', sans-serif;
   --font-mono:    'Roboto Mono', monospace;
 }
-.wordmark-img { height: 28px; width: auto; display: block; }
+.wordmark-img { height: 130px; width: auto; display: block; }
 .prize-card {
   background: var(--bg);
   border: 5px solid var(--blue);
@@ -32,6 +32,8 @@
   height: 80px;
   object-fit: contain;
 }
+.header { transition: transform 0.2s steps(3); }
+.header-hidden { transform: translateY(-100%); }
 /* ─── RESET ──────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 a { color: inherit; text-decoration: none; }
@@ -87,6 +89,8 @@ p { color: var(--lime); font-size: 1rem; line-height: 1.7; }
 /* z-index 1 on all real content keeps it above .stars (z-index 0) */
 .header, main, .footer { position: relative; z-index: 1; }
 .header { position: sticky; top: 0; background: var(--bg); border-bottom: 2px solid var(--divider); }
+.header-inner { flex-direction: column; align-items: center; }
+.nav { flex-wrap: wrap; justify-content: center; }
 main { flex: 1; }
 #about { scroll-margin-top: 200px; }
 

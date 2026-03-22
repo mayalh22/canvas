@@ -22,15 +22,12 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div
-        className="header-inner"
-        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}
-      >
+      <div className="header-inner">
         <Link to="/">
-          <img src={wordmark} alt="Canvas" style={{ height: '120px', width: 'auto', display: 'block' }} />
+          <img src={wordmark} alt="Canvas" className="wordmark-img" />
         </Link>
 
-        <nav className="nav" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <nav className="nav">
           <Link to="/" className="nav-link" onClick={scrollToAbout}>About</Link>
           {PAGE_LINKS.map((l) => (
             <Link key={l.label} to={l.to} className="nav-link">{l.label}</Link>
@@ -43,7 +40,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="nav-mobile" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+        <nav className="nav-mobile">
           <Link to="/" className="nav-link" onClick={() => { setOpen(false); scrollToAbout() }}>About</Link>
           {PAGE_LINKS.map((l) => (
             <Link key={l.label} to={l.to} className="nav-link" onClick={() => setOpen(false)}>{l.label}</Link>
