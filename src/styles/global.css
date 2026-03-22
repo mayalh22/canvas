@@ -76,11 +76,6 @@ p { color: var(--lime); font-size: 1rem; line-height: 1.7; }
   pointer-events: none; z-index: 9999;
 }
 
-/* ─── SCROLL REVEAL (toggled by useScrollReveal hook) ─ */
-/* translate only — no opacity, no fade */
-.scroll-reveal        { transform: translateY(32px); }
-.scroll-reveal.visible { transform: translateY(0); }
-
 /* ─── TYPE ───────────────────────────────────── */
 .title        { font-weight: bold; font-family: var(--font-display); font-size: 3rem;  font-weight: 700; color: var(--teal);  line-height: 1.1; margin-bottom: 1.25rem; }
 .subtitle     { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--peach); line-height: 1.2; margin-bottom: 1rem; }
@@ -180,3 +175,14 @@ details[open] .faq-indicator { transform: rotate(-135deg); }
 code { background: var(--pink); color: var(--divider); padding: 0.1rem 0.3rem; font-family: var(--font-mono); font-size: 0.9em; }
 pre  { background: var(--red); color: var(--divider); padding: 1rem; overflow-x: auto; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0; }
 pre code { background: none; color: var(--divider); padding: 0; }
+
+/* ─── PASTE THESE INTO global.css ─── */
+
+/* ─── TYPEWRITER CURSOR ──────────────────────── */
+.type-cursor {
+  display: inline-block;
+  color: var(--teal);
+  font-weight: 300;
+  animation: cursor-blink 0.7s steps(1) infinite;
+}
+@keyframes cursor-blink { 0%,100%{opacity:1} 50%{opacity:0} }
