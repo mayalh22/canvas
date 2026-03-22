@@ -78,8 +78,8 @@ p.fill(col)
 
   return (
     <div>
-      <p className="section-label">Here's a cool example I made in <P5JS></P5JS>. Move your mouse over this! There is also instructions on how to make this in the tutorials tab...</p>
-      <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
+<p className="section-label">Here's a cool example I made in P5.js. Move your mouse over this!...and learn how in the tutorial tab 
+</p>      <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
     </div>
   )
 }
