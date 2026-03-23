@@ -68,8 +68,7 @@ function P5Sketch() {
   return (
     <div>
       <p className="section-label"><br/> Here's a cool example I made in P5.js. Move your mouse over the box below!...and learn how to build this in the tutorials tab<br/> </p>
-      <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
-    </div>
+<div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden', border: '2px solid var(--blue)' }} />    </div>
   )
 }
 
