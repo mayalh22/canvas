@@ -164,3 +164,10 @@ details[open] .faq-indicator { transform: rotate(-135deg); }
 code     { background: var(--pink); color: var(--divider); padding: 0.1rem 0.3rem; font-family: var(--font-mono); font-size: 0.9em; }
 pre      { background: var(--red);  color: var(--divider); padding: 1rem; overflow-x: auto; font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.6; margin: 0.5rem 0; }
 pre code { background: none; color: var(--divider); padding: 0; }
+
+.music-toggle {
+  background: none; border: 2px solid var(--blue); color: var(--blue);
+  font-family: var(--font-mono); font-size: 0.85rem; padding: 0.2rem 0.5rem;
+  cursor: crosshair;
+}
+.music-toggle:hover { border-color: var(--peach); color: var(--peach); }
