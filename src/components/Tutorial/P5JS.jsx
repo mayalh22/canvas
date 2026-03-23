@@ -1,11 +1,13 @@
 import step3 from '../../assets/tutorials/p5-step3.png'
 import step6 from '../../assets/tutorials/p5-step6.png'
 import step7 from '../../assets/tutorials/p5-step7.png'
+import TypeH from '../Helpful/TypeH'
+
 
 export default function P5JS() {
   return (
     <div className="rule-list">
-      <h2 className="subtitle">Generative Drawing with P5.js</h2>
+      <TypeH text="Generative Drawing with P5.js" />
       <p>P5.js is a JavaScript library I recommend for anyone starting out with generative art. It gives you a canvas and a set of drawing functions so you can focus on making something instead of writing browser setup code. By the end of this tutorial you will have a looping animated sketch you can screenshot and submit!</p>
 
       <div>

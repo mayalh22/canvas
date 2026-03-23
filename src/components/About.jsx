@@ -4,7 +4,7 @@ import Button from "./Helpful/Button"
 import paintBuckets from '../assets/icons/paintbuckets.png'
 import useTypewriter from '../useTypewriter'
 
-const TITLE = "CANVAS"
+const TITLE = "Canvas"
 const SLOGAN = "Code something worth looking at!"
 
 function TypeH({ text, startAfter = 0, className }) {
@@ -67,7 +67,7 @@ function P5Sketch() {
 
   return (
     <div>
-      <p className="section-label">Here's a cool example I made in P5.js. Move your mouse over the box below!...and learn how to build this in the tutorial tab</p>
+      <p className="section-label"><br/> Here's a cool example I made in P5.js. Move your mouse over the box below!...and learn how to build this in the tutorials tab<br/> </p>
       <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
     </div>
   )
@@ -97,16 +97,12 @@ export default function About() {
               <span className="rule-mark rule-mark-pink" />
               <p>Ex: pixel art tool qualifies, but a todo app with nice CSS does not.</p>
             </div>
-            <div className="rule-item">
-              <span className="rule-mark rule-mark-teal" />
-              <p>Each verified hour earns 1 pixel. Check the prizes tab for things to do with those pixels!!</p>
-            </div>
           </div>
         </div>
 
         <div className="journal-card">
           <p className="section-label">My notes!</p>
-          <p>Creative coding is using programming as artistic expression with algorithms, randomness, and data as tools. Ship something pretty, get paintbrushes. Ship something really pretty, get an iPad!</p>
+          <p>Creative coding is using programming as artistic expression with algorithms, randomness, and data as tools. Ship something pretty, get paintbrushes. <br/> Ship something really pretty, get an iPad!<br/>  Each verified hour earns 1 pixel. Check the prizes tab for things to do with those pixels!!</p>
           <p className="section-label">Cool ideas for the future:</p>
           <ul>
             <li>Maybe have a gallery section where people can share their work?</li>

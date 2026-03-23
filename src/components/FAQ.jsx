@@ -1,4 +1,5 @@
 import buttons from '../assets/icons/buttons.png'
+import TypeH from '../components/Helpful/TypeH'
 
 
 const FAQS = [
@@ -21,7 +22,7 @@ export default function FAQ() {
     <section id="faq" className="section">
 <div className="rule-item" style={{ justifyContent: 'space-between' }}>        <div>
           <p className="section-label">If you have questions...!</p>
-          <h2 className="subtitle">FAQ</h2>
+          <TypeH text="FAQ" />
         </div>
         <img src={buttons} alt="" className="section-icon" />
       </div>

@@ -1,4 +1,6 @@
 import artInFrame from '../assets/icons/artinframe.png'
+import TypeH from '../components/Helpful/TypeH'
+
 
 export default function Gallery() {
   return (
@@ -6,7 +8,7 @@ export default function Gallery() {
       <div className="rule-item" style={{ justifyContent: 'space-between' }}>
         <div>
           <p className="section-label">Coming soon!</p>
-          <h2 className="subtitle">The Gallery</h2>
+          <TypeH text="The Gallery" />
         </div>
         <img src={artInFrame} alt="" className="section-icon" />
       </div>

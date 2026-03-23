@@ -1,4 +1,6 @@
 import Grid from './Helpful/Grid'
+import TypeH from '../components/Helpful/TypeH'
+
 
 import ex1 from '../assets/artex/1.png'
 import ex2 from '../assets/artex/2.png'
@@ -24,7 +26,7 @@ export default function ExampleArtGrid() {
   return (
     <div>
       <p className="section-label">Inspiration Below...Click on pics for more info!</p>
-      <h2 className="subtitle">Example Art</h2>
+      <TypeH text="Example Art" />
       <p>Here are some examples of the kind of work Canvas is meant for.</p>
       <br />
       <Grid cols={2}>

@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Button from "./Helpful/Button"
 import yarn from '../assets/icons/yarn.png'
+import TypeH from '../components/Helpful/TypeH'
+
 
 export default function FormsChoose() {
   const [active, setActive] = useState(null)
@@ -15,7 +17,7 @@ export default function FormsChoose() {
       <div className="rule-item" style={{ justifyContent: 'space-between' }}>
         <div>
           <p className="section-label">Ready to submit or spend pixels?</p>
-          <h2 className="subtitle">Forms and Things Like That</h2>
+          <TypeH text="Forms and Things Like That" />
           <p>Pick what you're here to do (obv. this counts only when Canvas has launched)!</p>
         </div>
         <img src={yarn} alt="" className="section-icon" />

@@ -1,11 +1,13 @@
 import step2 from '../../assets/tutorials/css-step2.png'
 import step4 from '../../assets/tutorials/css-step4.png'
 import step5 from '../../assets/tutorials/css-step5.mov'
+import TypeH from '../Helpful/TypeH'
+
 
 export default function CSS() {
   return (
     <div className="rule-list">
-      <h2 className="subtitle">Making Art with Pure CSS</h2>
+      <TypeH text="Making Art with Pure CSS" />
       <p>CSS can produce complex visual art without any JavaScript or image files. I love this approach because the output is entirely declarative — you describe what you want and the browser figures out how to render it. By the end of this tutorial you will have a looping animated composition you can screenshot or screen record and submit!</p>
 
       <div>

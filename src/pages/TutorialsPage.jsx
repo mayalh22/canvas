@@ -3,6 +3,7 @@ import Button from '../components/Helpful/Button'
 import P5JS from '../components/Tutorial/P5JS'
 import ASCII from '../components/Tutorial/ASCII'
 import CSS from '../components/Tutorial/CSS'
+import TypeH from '../components/Helpful/TypeH'
 
 const TABS = [
   { id: 'p5', label: 'P5.js' },
@@ -16,7 +17,7 @@ export default function TutorialsPage() {
   return (
     <section className="section">
       <p className="section-label">Learn something new!</p>
-      <h2 className="subtitle">Tutorials</h2>
+      <TypeH text="Tutorials" />
       <p>Not sure where to start? These three tutorials will get you from nothing to a decent piece! If you use one of these as a starting point, you must make at least one structural change and mention it in your artist statement.</p>
       <br />
       <div className="tab-row">

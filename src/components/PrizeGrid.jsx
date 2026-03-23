@@ -10,6 +10,8 @@ import adobe       from '../assets/prizes/adobe.png'
 import robot       from '../assets/prizes/robot.png'
 import wacom       from '../assets/prizes/wacom.png'
 import ipad        from '../assets/prizes/ipad.png'
+import TypeH from '../components/Helpful/TypeH'
+
 
 const TIERS = [
   {
@@ -46,7 +48,7 @@ export default function PrizeGrid() {
         <div className="rule-item">
           <img src={brush} alt="" className="section-icon" />
           <div>
-            <h2 className="subtitle">Prizes</h2>
+            <TypeH text="Prizes" />
             <p>Every verified hour of work earns you one pixel. Spend your pixels on real art supplies, professional tools, or hardware. Prizes are redeemed through a separate form and shipped to you directly.</p>
           </div>
         </div>

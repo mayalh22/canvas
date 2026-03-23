@@ -1,10 +1,11 @@
 import concept from '../../assets/tutorials/ascii-concept.png'
 import result  from '../../assets/tutorials/ascii-result.png'
+import TypeH from '../Helpful/TypeH'
 
 export default function ASCII() {
   return (
     <div className="rule-list">
-      <h2 className="subtitle">Image to ASCII Art with JavaScript</h2>
+      <TypeH text="Image to ASCII Art with JavaScript" />
       <p>ASCII art represents images using text characters. Each character corresponds to a pixel's brightness: dark areas get heavy symbols like '@' and light areas get lighter symbols like '.'. It's a satisfying way to transform photos into text-based artwork. By the end of this tutorial, you'll have a working tool that converts any image into ASCII art directly in your browser!</p>
 
       <div>

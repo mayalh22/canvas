@@ -5,6 +5,7 @@ import PrizeGrid from "./PrizeGrid"
 import ChallengeGrid from "./ChallengeGrid"
 import ExampleArtGrid from "./ExampleArtGrid"
 import Gallery from "./Gallery"
+import TypeH from '../components/Helpful/TypeH'
 
 const TABS = [
   { id: "prizes",     label: "Prizes"       },
@@ -19,7 +20,7 @@ export default function Options() {
   return (
     <section id="options" className="section">
       <p className="section-label">Explore!</p>
-      <h2 className="subtitle">What's inside</h2>
+      <TypeH text="What's inside" />
 
       <div className="tab-row">
         {TABS.map((tab) => (

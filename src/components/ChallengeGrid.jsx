@@ -1,4 +1,6 @@
 import Grid from './Helpful/Grid'
+import TypeH from '../components/Helpful/TypeH'
+
 
 const CHALLENGES = [
   {
@@ -32,7 +34,7 @@ export default function ChallengeGrid() {
   return (
     <div>
       <p className="section-label">Optional Constraints Below:</p>
-      <h2 className="subtitle">Palette Challenges</h2>
+      <TypeH text="Palette Challenges" />
       <p>Each challenge adds a creative constraint to your submission. You do not have to do one, but if you do, it shows up on your gallery entry and earns you extra recognition. Constraints are declared at submission time!</p>
       <br />
       <Grid cols={2}>
