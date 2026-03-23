@@ -29,13 +29,3 @@ export default function useTypewriter(text, startAfterMs = 0) {
 
   return displayed
 }
-
-export function chainDelays(texts, gapMs = 200) {
-  const delays = []
-  let total = 0
-  for (const text of texts) {
-    delays.push(total)
-    total += text.length * SPEED + gapMs  // consistent SPEED used everywhere
-  }
-  return delays
-}
