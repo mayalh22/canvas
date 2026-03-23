@@ -31,7 +31,12 @@ export default function Header() {
     }
     setPlaying(!playing)
   }
+const [starsOn, setStarsOn] = useState(true)
 
+const toggleStars = () => {
+  setStarsOn(!starsOn)
+  document.querySelector('.stars').style.display = starsOn ? 'none' : 'block'
+}
   return (
     <header className="header">
       <audio ref={audioRef} src="/music.mp3" loop />
@@ -53,6 +58,9 @@ export default function Header() {
           >
             {playing ? '♪ on' : '♪ off'}
           </button>
+          <button onClick={toggleStars} className="music-toggle" aria-label="Toggle stars">
+  {starsOn ? '★ on' : '★ off'}
+</button>
         </nav>
 
         <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
