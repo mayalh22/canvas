@@ -1,37 +1,23 @@
+import { useEffect, useRef } from "react"
 import Grid from "./Helpful/Grid"
 import Button from "./Helpful/Button"
 import paintBuckets from '../assets/icons/paintbuckets.png'
-import useTypewriter, { chainDelays } from '../useTypewriter'
-import { useEffect, useRef } from "react"
+import useTypewriter from '../useTypewriter'
 
-const LEFT_TEXTS = [
-  "You know how to write code: you've used functions, loops, APIs, and all other types of very impressive tools...but code isn't just useful, it can be beautiful too! Canvas is a YSWS for Hack Clubbers who want to see their programs turned into art and hung on their wall.",
-  "Ship something visual to earn pixels!",
-  "The primary output must be visual (it can also be functional)",
-  "Ex: pixel art tool qualifies, but a todo app with nice CSS does not.",
-  "Each verified hour earns 1 pixel. Check the prizes tab for things to do with those pixels!!",
-]
+const TITLE = "CANVAS"
+const SLOGAN = "Code something worth looking at!"
 
-const RIGHT_TEXTS = [
-  "Creative coding is the practice of using programming as artistic expression, where algorithms, randomness, and data become the tools instead of a paintbrush. It challenges the idea that code is purely functional and shows that it can be just as expressive as any traditional art form. I wanted a YSWS for that. So here it is. Ship something pretty, get paintbrushes. Ship something really pretty, get an iPad!",
-  "Maybe have a gallery section where people can share their work?",
-  "I'd like to allow people to vote on slack for their favorite...",
-  "Absolutely definitely I will add a prize option of getting art printed on sweatshirts, stickers, etc",
-]
-const allTexts = [...LEFT_TEXTS, ...RIGHT_TEXTS]
-const allDelays = chainDelays(allTexts)
-const leftDelays = allDelays.slice(0, LEFT_TEXTS.length)
-const rightDelays = allDelays.slice(LEFT_TEXTS.length)
-function TypeP({ text, startAfter = 0 }) {
+function TypeH({ text, startAfter = 0, className }) {
   const displayed = useTypewriter(text, startAfter)
   const done = displayed.length === text.length
   return (
-    <p>
+    <h1 className={className}>
       {displayed}
       {!done && <span className="type-cursor">|</span>}
-    </p>
+    </h1>
   )
 }
+
 function P5Sketch() {
   const canvasRef = useRef(null)
 
@@ -81,49 +67,51 @@ function P5Sketch() {
 
   return (
     <div>
-      <p className="section-label">Here's a cool example I made in P5.js. Move your mouse over this!...and learn how to build this in the tutorial tab</p>
+      <p className="section-label">Here's a cool example I made in P5.js. Move your mouse over the box below!...and learn how to build this in the tutorial tab</p>
       <div ref={canvasRef} style={{ width: '100%', height: '300px', overflow: 'hidden' }} />
     </div>
   )
 }
 
 export default function About() {
+  const sloganDelay = TITLE.length * 30 + 200
+
   return (
     <section id="about" className="section">
       <Grid cols={2}>
         <div className="about-main">
-          <h1 className="title">CANVAS</h1>
-          <h1 className="subtitle">Code something worth looking at!</h1>
+          <TypeH text={TITLE} startAfter={0} className="title" />
+          <TypeH text={SLOGAN} startAfter={sloganDelay} className="subtitle" />
 
-          <TypeP text={LEFT_TEXTS[0]} startAfter={leftDelays[0]} />
-          <TypeP text={LEFT_TEXTS[1]} startAfter={leftDelays[1]} />
+          <p>You know how to write code: you've used functions, loops, APIs, and all other types of very impressive tools...but code can be more than useful, it can be beautiful too! Canvas is a YSWS for Hack Clubbers who want to see their programs turned into art and hung on their wall.</p>
+          <p>Ship something visual to earn pixels!</p>
 
           <img src={paintBuckets} alt="" className="section-icon" />
 
           <div className="rule-list">
             <div className="rule-item">
               <span className="rule-mark rule-mark-lime" />
-              <TypeP text={LEFT_TEXTS[2]} startAfter={leftDelays[2]} />
+              <p>The primary output must be visual (it can also be functional)</p>
             </div>
             <div className="rule-item">
               <span className="rule-mark rule-mark-pink" />
-              <TypeP text={LEFT_TEXTS[3]} startAfter={leftDelays[3]} />
+              <p>Ex: pixel art tool qualifies, but a todo app with nice CSS does not.</p>
             </div>
             <div className="rule-item">
               <span className="rule-mark rule-mark-teal" />
-              <TypeP text={LEFT_TEXTS[4]} startAfter={leftDelays[4]} />
+              <p>Each verified hour earns 1 pixel. Check the prizes tab for things to do with those pixels!!</p>
             </div>
           </div>
         </div>
 
         <div className="journal-card">
           <p className="section-label">My notes!</p>
-          <TypeP text={RIGHT_TEXTS[0]} startAfter={rightDelays[0]} />
+          <p>Creative coding is using programming as artistic expression with algorithms, randomness, and data as tools. Ship something pretty, get paintbrushes. Ship something really pretty, get an iPad!</p>
           <p className="section-label">Cool ideas for the future:</p>
           <ul>
-            <li><TypeP text={RIGHT_TEXTS[1]} startAfter={rightDelays[1]} /></li>
-            <li><TypeP text={RIGHT_TEXTS[2]} startAfter={rightDelays[2]} /></li>
-            <li><TypeP text={RIGHT_TEXTS[3]} startAfter={rightDelays[3]} /></li>
+            <li>Maybe have a gallery section where people can share their work?</li>
+            <li>I'd like to allow people to vote on Slack for their favorite...</li>
+            <li>Absolutely definitely I will add a prize option of getting art printed on sweatshirts, stickers, etc</li>
           </ul>
           <p className="journal-date">March 2026</p>
           <Button label="RSVP here... or else!!" onClick={() => window.open('https://forms.fillout.com/t/rYV9dBqDLqus', '_blank')} />
